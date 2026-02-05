@@ -27,8 +27,8 @@ importers:
         specifier: ^9.39.2
         version: 9.39.2(jiti@2.6.1)
       flowmit:
-        specifier: ^1.0.9
-        version: 1.0.9
+        specifier: ^1.0.11
+        version: 1.0.11
       fs-extra:
         specifier: ^11.3.3
         version: 11.3.3
@@ -64,6 +64,18 @@ importers:
         version: 7.1.9(postcss@8.5.6)(vite@7.3.1(@types/node@25.2.0)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.2))
 
   packages/copyable:
+    devDependencies:
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
+      vite:
+        specifier: ^7.3.1
+        version: 7.3.1(@types/node@25.2.0)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.2)
+      vite-plugin-monkey:
+        specifier: ^7.1.9
+        version: 7.1.9(postcss@8.5.6)(vite@7.3.1(@types/node@25.2.0)(jiti@2.6.1)(tsx@4.21.0)(yaml@2.8.2))
+
+  packages/skip-redirect:
     devDependencies:
       typescript:
         specifier: ^5.9.3
@@ -434,6 +446,9 @@ packages:
   '@pkgr/core@0.2.9':
     resolution: {integrity: sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
+
+  '@quansync/fs@1.0.0':
+    resolution: {integrity: sha512-4TJ3DFtlf1L5LDMaM6CanJ/0lckGNtJcMjQ1NAV6zDmA0tEHKZtxNKin8EgPaVX1YzljbxckyT2tJrpQKAtngQ==}
 
   '@rollup/rollup-android-arm-eabi@4.57.1':
     resolution: {integrity: sha512-A6ehUVSiSaaliTxai040ZpZ2zTevHYbvu/lDoeAteHI8QnaosIzm4qwtezfRg1jOYaUmnzLX1AOD6Z+UJjtifg==}
@@ -1272,8 +1287,8 @@ packages:
   flatted@3.3.3:
     resolution: {integrity: sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg==}
 
-  flowmit@1.0.9:
-    resolution: {integrity: sha512-qwtFxfvS1ouwzWQ6Pnp99qv9XjvFPcZWpd+1SXzM1Mr82oYxjNGuUa2QAF+l6nfHenkWC3/Cqm6lqPBGnk6ZtA==}
+  flowmit@1.0.11:
+    resolution: {integrity: sha512-r6EYC/qKTuS8qD9PRRpbSWesDA6E8YNreHHFUDkP+nX1GE//moDu6LyiO5g6govvymSp0h2fUm7hM1OWIMmyJQ==}
     hasBin: true
 
   format@0.2.2:
@@ -1455,6 +1470,10 @@ packages:
 
   kleur@3.0.3:
     resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
+    engines: {node: '>=6'}
+
+  kleur@4.1.5:
+    resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
 
   levn@0.4.1:
@@ -1652,6 +1671,9 @@ packages:
     resolution: {integrity: sha512-G6T0ZX48xgozx7587koeX9Ys2NYy6Gmv//P89sEte9V9whIapMNF4idKxnW2QtCcLiTWlb/wfCabAtAFWhhBow==}
     engines: {node: '>=16 || 14 >=14.17'}
 
+  minimist@1.2.8:
+    resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
+
   minipass@7.1.2:
     resolution: {integrity: sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==}
     engines: {node: '>=16 || 14 >=14.17'}
@@ -1816,6 +1838,10 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
+  prompts-plus@3.0.4:
+    resolution: {integrity: sha512-bIQq9WQ8HlE0qrS3coDvXVJH+BVGmYlyvJZWmKsGtdQd1VYdLNvXSuWJskUhSjemQEG7OPlH+n3uH/T+xGgvgQ==}
+    engines: {node: '>= 14'}
+
   prompts@2.4.2:
     resolution: {integrity: sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q==}
     engines: {node: '>= 6'}
@@ -1826,6 +1852,9 @@ packages:
 
   quansync@0.2.11:
     resolution: {integrity: sha512-AifT7QEbW9Nri4tAwR5M/uzpBuqfZf+zwaEM/QkzEjj7NBuFD2rBuy0K3dE+8wltbezDV7JMA0WfnCPYRSYbXA==}
+
+  quansync@1.0.0:
+    resolution: {integrity: sha512-5xZacEEufv3HSTPQuchrvV6soaiACMFnq1H8wkVioctoH3TRha9Sz66lOxRwPK/qZj7HPiSveih9yAyh98gvqA==}
 
   rc9@2.1.2:
     resolution: {integrity: sha512-btXCnMmRIBINM2LDZoEmOogIZU7Qe7zn4BpomSKZ/ykbLObuBdvG+mFq11DL6fjH1DRwHhrlgtYWG96bJiC7Cg==}
@@ -2013,6 +2042,12 @@ packages:
 
   ufo@1.6.3:
     resolution: {integrity: sha512-yDJTmhydvl5lJzBmy/hyOAA0d+aqCBuwl818haVdYCRrWV84o7YyeVm4QlVHStqNrrJSTb6jKuFAVqAFsr+K3Q==}
+
+  unconfig-core@7.4.2:
+    resolution: {integrity: sha512-VgPCvLWugINbXvMQDf8Jh0mlbvNjNC6eSUziHsBCMpxR05OPrNrvDnyatdMjRgcHaaNsCqz+wjNXxNw1kRLHUg==}
+
+  unconfig@7.4.2:
+    resolution: {integrity: sha512-nrMlWRQ1xdTjSnSUqvYqJzbTBFugoqHobQj58B2bc8qxHKBBHMNNsWQFP3Cd3/JZK907voM2geYPWqD4VK3MPQ==}
 
   undici-types@7.16.0:
     resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
@@ -2428,6 +2463,10 @@ snapshots:
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
   '@pkgr/core@0.2.9': {}
+
+  '@quansync/fs@1.0.0':
+    dependencies:
+      quansync: 1.0.0
 
   '@rollup/rollup-android-arm-eabi@4.57.1':
     optional: true
@@ -3321,7 +3360,12 @@ snapshots:
 
   flatted@3.3.3: {}
 
-  flowmit@1.0.9: {}
+  flowmit@1.0.11:
+    dependencies:
+      minimist: 1.2.8
+      picocolors: 1.1.1
+      prompts-plus: 3.0.4
+      unconfig: 7.4.2
 
   format@0.2.2: {}
 
@@ -3469,6 +3513,8 @@ snapshots:
       json-buffer: 3.0.1
 
   kleur@3.0.3: {}
+
+  kleur@4.1.5: {}
 
   levn@0.4.1:
     dependencies:
@@ -3864,6 +3910,8 @@ snapshots:
     dependencies:
       brace-expansion: 2.0.2
 
+  minimist@1.2.8: {}
+
   minipass@7.1.2: {}
 
   mlly@1.8.0:
@@ -4015,6 +4063,11 @@ snapshots:
   prettier@3.8.1:
     optional: true
 
+  prompts-plus@3.0.4:
+    dependencies:
+      kleur: 4.1.5
+      sisteransi: 1.0.5
+
   prompts@2.4.2:
     dependencies:
       kleur: 3.0.3
@@ -4023,6 +4076,8 @@ snapshots:
   punycode@2.3.1: {}
 
   quansync@0.2.11: {}
+
+  quansync@1.0.0: {}
 
   rc9@2.1.2:
     dependencies:
@@ -4209,6 +4264,19 @@ snapshots:
   typescript@5.9.3: {}
 
   ufo@1.6.3: {}
+
+  unconfig-core@7.4.2:
+    dependencies:
+      '@quansync/fs': 1.0.0
+      quansync: 1.0.0
+
+  unconfig@7.4.2:
+    dependencies:
+      '@quansync/fs': 1.0.0
+      defu: 6.1.4
+      jiti: 2.6.1
+      quansync: 1.0.0
+      unconfig-core: 7.4.2
 
   undici-types@7.16.0: {}
 

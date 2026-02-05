@@ -7,6 +7,7 @@ const BaiduWenku: Website = {
 
     document.addEventListener('copy', async () => {
       const originClipboard = await navigator.clipboard.readText()
+      // eslint-disable-next-line regexp/no-unused-capturing-group, regexp/no-super-linear-backtracking
       const tailPattern = /(-{56,})[\s\S]*?作者：/
       const match = tailPattern.exec(originClipboard)
       let newClipboard = originClipboard

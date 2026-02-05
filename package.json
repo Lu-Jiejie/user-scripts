@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "eslint .",
     "release": "tsx scripts/release.ts",
-    "build": "tsx scripts/build.ts"
+    "build": "tsx scripts/build.ts",
+    "fm": "npx flowmit"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^7.2.0",
@@ -17,7 +18,7 @@
     "@types/prompts": "^2.4.9",
     "bumpp": "^10.4.0",
     "eslint": "^9.39.2",
-    "flowmit": "^1.0.9",
+    "flowmit": "^1.0.11",
     "fs-extra": "^11.3.3",
     "lint-staged": "^16.2.7",
     "picocolors": "^1.1.1",
