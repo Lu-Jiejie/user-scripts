@@ -1,0 +1,17 @@
+{
+  "name": "bilibili-random-play",
+  "type": "module",
+  "version": "1.1.0",
+  "private": "true",
+  "description": "为B站分P视频添加随机播放功能，听歌软件怎么能没有随机播放？",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vite-plugin-monkey": "^7.1.9"
+  }
+}

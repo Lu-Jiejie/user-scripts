@@ -1,0 +1,8 @@
+.vscode/
+!/.vscode/
+
+node_modules/
+preTranslate
+dist
+temp
+test.ts
